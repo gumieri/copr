@@ -42,9 +42,9 @@ Waylogout is graphical logout/suspend/reboot/shutdown dialog for Wayland. It is 
 
 %files
 %{_bindir}/waylogout
-%{_datadir}/completions/bash/waylogout
-%{_datadir}/completions/fish/waylogout.fish
-%{_datadir}/completions/zsh/_waylogout
+%{_datadir}/bash-completion/completions/waylogout
+%{_datadir}/fish/vendor_completions.d/waylogout.fish
+%{_datadir}/zsh/site-functions/_waylogout
 
 %{_mandir}/man1/waylogout.1.gz
 
