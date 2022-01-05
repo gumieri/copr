@@ -1,6 +1,6 @@
 Name:           waylogout
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Graphical logout/suspend/reboot/shutdown dialog for Wayland
 
 License:        MIT
@@ -18,7 +18,6 @@ BuildRequires:  libxkbcommon-devel
 BuildRequires:  gdk-pixbuf2-devel
 BuildRequires:  scdoc
 Requires:       libxkbcommon
-Requires:       wayland
 Requires:       cairo
 Requires:       gdk-pixbuf2
 Recommends:     sway
@@ -52,5 +51,8 @@ Waylogout is graphical logout/suspend/reboot/shutdown dialog for Wayland. It is 
 %doc README.*
 
 %changelog
+* Wed Jan 05 2022 Rafael Gumieri <rafael@gumieri.com> - 1.0-2
+- fix requirements
+
 * Wed Jan 05 2022 Rafael Gumieri <rafael@gumieri.com> - 1.0-1
 - RPM release of waylogout
