@@ -1,4 +1,4 @@
-Name:           swaylock
+Name:           waylogout
 Version:        1.0
 Release:        1%{?dist}
 Summary:        Graphical logout/suspend/reboot/shutdown dialog for Wayland
@@ -52,5 +52,5 @@ Waylogout is graphical logout/suspend/reboot/shutdown dialog for Wayland. It is 
 %doc README.*
 
 %changelog
-* wed Jan 5 2022 Rafael Gumieri <rafael@gumieri.com> - 1.0-1
+* wed Jan 05 2022 Rafael Gumieri <rafael@gumieri.com> - 1.0-1
 - RPM release of waylogout
