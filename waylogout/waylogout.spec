@@ -28,7 +28,7 @@ Recommends:     fontawesome-fonts
 Waylogout is graphical logout/suspend/reboot/shutdown dialog for Wayland. It is inspired by oblogout and based on code from swaylock-effects.
 
 %prep
-%autosetup
+%autosetup -n %{name}-mainline
 
 %build
 %meson -Dwerror=false --auto-features=auto
