@@ -5,7 +5,7 @@ Summary:        Graphical logout/suspend/reboot/shutdown dialog for Wayland
 
 License:        MIT
 URL:            https://github.com/loserMcloser/waylogout
-Source0:        %{url}/archive/master.tar.gz
+Source0:        %{url}/archive/mainline.tar.gz
 
 BuildRequires:  git
 BuildRequires:  gcc
