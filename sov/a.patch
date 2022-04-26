@@ -1,0 +1,32 @@
+diff --git a/meson.build b/meson.build
+index f5dbd04..1a97156 100644
+--- a/meson.build
++++ b/meson.build
+@@ -23,6 +23,9 @@ if get_option('buildtype').startswith('debug')
+   add_project_arguments('-DDEBUG', language : 'c')
+ endif
+ 
++add_project_arguments('-DNAME_MAX=1024', language : 'c')
++add_project_arguments('-DPATH_MAX=1024', language : 'c')
++
+ wayland_scanner_code = generator(
+   wayland_scanner,
+   output: '@BASENAME@-protocol.c',
+@@ -90,8 +93,8 @@ com_sources = ['src/sov/config/config.c',
+ 	       'src/modules/zen_core/zc_wrapper.c',
+ 	       'src/modules/zen_text/text.c']
+ 
+-sov_sources = com_sources + 'src/sov/main.c'
+-tst_sources = com_sources + 'src/sov/tree_test.c'
++sov_sources = com_sources + ['src/sov/main.c']
++tst_sources = com_sources + ['src/sov/tree_test.c']
+ 
+ sov_dependencies = [xdg_output_unstable_v1, wayland_client, wlr_layer_shell_unstable_v1, xdg_shell, rt, freetype, math]
+ 
+@@ -110,4 +113,4 @@ executable(
+   tst_sources,
+   include_directories: [sov_inc],
+   dependencies: sov_dependencies,
+-)
+\ No newline at end of file
++)

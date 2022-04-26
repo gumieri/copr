@@ -7,6 +7,9 @@ License:        MIT
 URL:            https://github.com/milgra/sov
 Source0:        %{url}/archive/refs/tags/%{version}.tar.gz
 
+# https://www.reddit.com/r/swaywm/comments/ubsw9a/comment/i68zfjz/?utm_source=reddit&utm_medium=web2x&context=3
+Patch100:       a.patch
+
 BuildRequires:  git
 BuildRequires:  gcc
 BuildRequires:  ftgl-devel
