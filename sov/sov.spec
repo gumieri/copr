@@ -17,7 +17,6 @@ BuildRequires:  clang
 BuildRequires:  meson
 BuildRequires:  wayland-devel
 BuildRequires:  wayland-protocols-devel
-Requires:       wayland
 Recommends:     sway
 
 %description
@@ -38,7 +37,7 @@ Sway Overview. An overlay that shows schemas for all workspaces to make navigati
 
 %files
 %{_bindir}/sov
-%config(noreplace) %{_sysconfdir}/sov/config
+%{_datadir}/sov/config
 
 %license LICENSE
 %doc README.*
