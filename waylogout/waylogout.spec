@@ -1,6 +1,6 @@
 Name:           waylogout
-Version:        1.0
-Release:        2%{?dist}
+Version:        1.1
+Release:        1%{?dist}
 Summary:        Graphical logout/suspend/reboot/shutdown dialog for Wayland
 
 License:        MIT
@@ -51,6 +51,9 @@ Waylogout is graphical logout/suspend/reboot/shutdown dialog for Wayland. It is 
 %doc README.*
 
 %changelog
+* Tue Apr 26 2022 Rafael Gumieri <rafael@gumieri.com> - 1.1-1
+- bump version
+
 * Wed Jan 05 2022 Rafael Gumieri <rafael@gumieri.com> - 1.0-2
 - fix requirements
 
